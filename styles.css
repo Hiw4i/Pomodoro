@@ -133,11 +133,12 @@ svg {
 }
 
 .save {
-  font-size: 35px;
+  font-size: 20px;
   background-color: rgb(51, 51, 51);
-  padding: 15px 40px;
+  padding: 12px 40px;
   margin: 10px 0 5px 0px;
   color: white;
+  text-transform: uppercase;
 }
 
 .set_time {
@@ -244,7 +245,7 @@ svg {
       width: 400px;
     }
     .save {
-      font-size: 20px;
+      font-size: 15px;
     }
 }
 
