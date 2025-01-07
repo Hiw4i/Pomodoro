@@ -6,7 +6,7 @@
 
 body{
     text-align: center;
-    font-family: "Poppins", serif;
+    font-family: "Poppins", "Roboto", serif;
     font-weight: 300;
     font-style: normal;
     font-size: 16px;
@@ -87,6 +87,9 @@ body{
 }
 .settings svg{
     scale: 4;
+}
+svg {
+  filter: invert(100%);
 }
 
 .app_timer .timer_btn {
@@ -261,9 +264,5 @@ body{
   .app_timer .timer_btn {
     min-width: 76px;
   }
-}
-
-svg {
-  filter: invert(100%);
 }
 
