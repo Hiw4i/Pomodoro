@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body{
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    user-select: none;
+    background: #C07F3F;
+}
+
+.app_form_block input[type="number"] {
+    padding: 4px 4px;
+}
+
+.app_main .block_row {
+    padding: 0 0.5em 11em 0.5em;
+    margin: 0 auto;
+}
+  
+.app_timer .timer_panel_info, .timer_panel_nums {
+    letter-spacing: 0;
+}
+
+.green {
+    color: #BFF08E;
+  }
+
+.red {
+    color: #E56655;
+  }
+
+.app_timer .timer_panel_nums {
+    font-size: 5.8em;
+    line-height: 2em;
+    margin: 40px 0 40px 0;
+}
+
+.app_timer .timer_btn.hide,
+.app_timer .timer_nums.hide,
+.app_timer .timer_sep.hide {
+    display: none;
+}
+
+.timer_btn {
+    background-color: #000000;
+    border: none;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: transform .5s;
+    position: relative;
+    box-shadow: 0px 0px 20px 0px #000000;
+}
+
+.timer_btn:hover {
+    transform: scale(1.08);
+}
+
+.timer_btn:active{
+    transform: scale(0.97);
+}
+
+.reset svg{
+    scale: 5;
+}
+.run svg{
+    scale: 5;
+    margin-left: 6px;
+    margin-top: 40px;
+}
+.pause svg{
+    padding: 1px 1px;
+    margin-left: 1px;
+    margin-top: 7px;
+    scale: 4;
+}
+.settings svg{
+    scale: 4;
+}
+
+.app_timer .timer_btn {
+    border-color: #ffffff;
+    color: #ffffff;
+    font-size: 1em;
+    line-height: 6em;
+    padding: 8px 8px;
+    margin: 1px 12px;
+    min-width: 117px;
+  }
+
+.app_timer .reset:hover {
+    background-color: #ff0202;
+}
+
+.app_timer .timer_btn.run,
+.app_timer .timer_btn.pause {
+    border-color: #eeea15;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.app_timer .timer_btn.run:hover,
+.app_timer .timer_btn.pause:hover {
+    background-color: #87ffa1;
+}
+
+.close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: rgba(0, 0, 0, 0);
+  scale: 1.2;
+  padding: 10px;
+  transition: transform .3s;
+}
+
+.close:hover {
+  transform: scale(1.2);
+}
+
+.save {
+  font-size: 35px;
+  background-color: rgb(51, 51, 51);
+  padding: 15px 40px;
+  margin: 10px 0 5px 0px;
+}
+
+.set_time {
+  width: calc(100% - 30px);
+  height: 60px;
+  background-color: rgb(51, 51, 51);
+  display: inline-flex;
+  border-radius: 30px;
+  margin: 50px 15px 15px 15px;
+}
+
+.details {
+  position: fixed;
+  width: 600px;
+  padding-bottom: 20px;
+  background: #181818;
+  z-index: 2;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+.details .text {
+  width: 200px;
+  padding: 16px 30px;
+  text-align: left;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+}
+.details .title {
+  font-size: 25px;
+  padding-top: 26px;
+}
+.details .timer_sep {
+  text-transform:lowercase;
+}
+.details .minutes {
+  font-size: 20px;
+  width: 200px;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  text-align: justify;
+
+  padding-right: 11px;
+  margin: 10px 0 10px 0;
+
+  overflow-x: hidden;
+
+  border-radius: 15px;
+}
+
+.timer_sep {
+  font-size: 20px;
+  padding: 0 10px 0 5px;
+  display: flex;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.hid {
+  display: none;
+}
+
+.hidd {
+  display: none;
+}
+
+.hiddd {
+  display: none;
+}
+
+.empty {
+  height: 25px;
+}
+
+.timer_interval_count {
+  display: flex;
+  position: fixed;
+  justify-content: left;
+  left: 5%;
+  top: 90%;
+  width: 500px;
+  height: 30px;
+  font-size: 21px;
+  float: left;
+  clear: both;
+}
+
+.timer_sep {
+  margin-left: 3px;
+}
+
+.app_form_block, .app_main, .app_timer {
+  position: absolute;
+  top: 100px;
+}
+
+@media (max-width: 616px) {
+    .details {
+      width: 400px;
+    }
+    .save {
+      font-size: 20px;
+    }
+}
+
+@media (max-width: 450px) {
+  .details {
+    width: 350px;
+  }
+  .details .text {
+    font-size: 12px;
+  }
+  .details .minutes {
+    font-size: 15px;
+  }
+  .details .timer_sep {
+    font-size: 12px;
+  }
+  .app_timer .timer_btn {
+    min-width: 76px;
+  }
+}
+
