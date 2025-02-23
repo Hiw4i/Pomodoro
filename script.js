@@ -205,11 +205,6 @@ $('#timer_clear').click(function() {
 	now_seconds = 0;
 	now_times = 0;
 
-	$('.timer_interval_work .minutes').text('25');
-	$('.timer_interval_work .seconds').text('00');
-	$('.timer_interval_rest .minutes').text('05');
-	$('.timer_interval_rest .seconds').text('00');
-	$('.timer_interval_count .times').text('1');
 	$('.timer_interval_count .all_times').text(timer_params.interval_count);
 	
 	isInactive = true;
