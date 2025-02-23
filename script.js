@@ -210,7 +210,7 @@ $('#timer_clear').click(function() {
 	$('.timer_interval_rest .minutes').text('05');
 	$('.timer_interval_rest .seconds').text('00');
 	$('.timer_interval_count .times').text('1');
-	$('.timer_interval_count .all_times').text('5');
+	$('.timer_interval_count .all_times').text(sets_count);
 	
 	isInactive = true;
 
