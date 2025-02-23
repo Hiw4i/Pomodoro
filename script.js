@@ -233,9 +233,6 @@ $('.save').click(function() {
 
 	timer_params.time_work = timer_minutes_work*60;
 	timer_params.time_rest = timer_minutes_rest*60;
-	timer_params.interval_count = sets_count;
-	timer_interval_nums = sets_count
-
 
 	renderTimerNums(timer_params.time_work);
 
