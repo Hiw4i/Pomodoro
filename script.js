@@ -192,6 +192,8 @@ $('#timer_pause').click(function(event, params) {
 });
 
 $('#timer_clear').click(function() {
+	const body = document.querySelector('body');
+	body.style.backgroundColor = '#C07F3F';
 
 	$('#timer_pause').trigger('click', {audio: 0});
 
