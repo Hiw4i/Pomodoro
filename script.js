@@ -208,6 +208,7 @@ $('#timer_clear').click(function() {
 	now_times = 0;
 
 	$('.timer_interval_count .all_times').text(timer_params.interval_count);
+	$('.timer_interval_nums.times').text(1);
 	
 	isInactive = true;
 
